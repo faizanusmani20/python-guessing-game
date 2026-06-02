@@ -13,5 +13,8 @@ A simple Python program that simulates rolling two dice.
 ```bash   
 python dice.py
 
+```
+
+## Example Output
 You want to roll dice (y/n): y
 (3, 5)
