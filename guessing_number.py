@@ -1,20 +1,21 @@
 import random
 
-random=random.randint(1,101)
-count=0
-print(random)
+secret_number = random.randint(1, 100)
+count = 0
+
 while True:
     try:
-        num=int(input("Enter a Number 1-100: "))
-        count+=1
+        num = int(input("Enter a number (1-100): "))
+        count += 1
     except ValueError:
-        print("Enter Valid Number")
+        print("Please enter a valid number.")
+        continue
 
-    if num>random:
+    if num > secret_number:
         print("Too High")
-    elif num<random:
+    elif num < secret_number:
         print("Too Low")
     else:
-        print(f"Congratulation ! No is {random}")
-        print(f'You guessed in {count} attempt ')
+        print(f"Congratulations ♥ The number was {secret_number}")
+        print(f"You guessed it in {count} attempts.")
         break
